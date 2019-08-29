@@ -4,88 +4,267 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Index</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,600,900|Roboto:300,700" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+<!-- ============================================================= -->
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/contact-form.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+<!-- ============================================================= -->
 	<link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
 
-	<section class="header">
-		<div class="profile_pic">
-			<img src="assets/images/profilePic.png">
-		</div>
-		<div class="detail">
-			<h5>Hello, I am</h5>
-			<h1>KAWSHIK LODH</h1>
-			<h5 class="text-exception-1">Designer Developer Coder</h5>
-			<img src="assets/images/decorationRect.png">
-		</div>
-	</section>
-
-	<section class="about">
-		<h1 class="head-text">About Me</h1>
-		<h4 class="body-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. </h4>
-	</section>
+	<div class="loading" id="loading">
+		<img src="assets/images/loading1.gif">
+	</div>
 	
-	<section class="skills">
-		<h1 class="head-text">My Skills</h1>
+	<!-- NAVBAR -->
+	<nav class="navbar" id="navbar">
+		<div class="navbar-brand">
+			<img id="logo" src="assets/images/logo.png">
+		</div>
+		<div class="navbar-links" id="navbar_links">
+			<ul>
+				<li class="special-margin" id="nav_link_home"><a href="#">Home</a></li>	
+				<li><a href="#about" id="nav_link_about">About Me</a></li>
+				<li><a href="#works" id="nav_link_work">My Works</a></li>
+				<li><a href="#contactme" id="nav_link_contact">Contact Me</a></li>
+			</ul>
+		</div>
+	</nav>
 
-		<div class="skill-container">
-			<div class="skill">
-				<h5>Java</h5>
-				<img src="assets/images/skillBar.png">
-			</div>
-			<div class="skill">
-				<h5>C++</h5>
-				<img src="assets/images/skillBar.png">
-			</div>
-			<div class="skill">
-				<h5>Python</h5>
-				<img src="assets/images/skillBar.png">
-			</div>
-			<div class="skill">
-				<h5>C</h5>
-				<img src="assets/images/skillBar.png">
-			</div>
+	
+
+	<!-- Landing Section -->
+	<section class="landing-section-container">
+		<div class="hero-img">
+			<img src="assets/images/face.jpg">
+		</div>
+		<div class="hero-detail">
+			<h5><i>Hello I'm</i></h2>
+			<h1>Kawshik Lodh</h1>
+			<h6>Web Designer/App Developer/Software Engineer</h6>
 		</div>
 	</section>
 
-	<section class="portfolio">
-		
-		<h1 class="head-text">My Portfolio</h1>
-		
-		<div class="project-left">
-			<img src="assets/images/projectPic1.png">
-			<div class="desc">
-				<h2>Sweet Recipes App</h2>
-				<h4>Sweets are the a very mouth watering part of the any diet.This Sweet Recipes App will provide you with all the sensations of mouth watering sweeteness and heartfull of joy. </h4>
-			</div>
+
+
+	<!-- About Section -->
+	<section class="about-section-container" id="about">
+		<h1>About Me</h1>
+		<h4>A technical guy who is always facinated about the new technologies of the Industry, I have made projects on many latest web technologies. Also I am very much facinated about the open source community for which I have made small projects which will help people solve their needs. </h4>
+	</section>	
+
+
+
+	<!-- My Skills Section -->
+	<section class="myskills-section-container">
+		<h1>My Skills</h1>
+
+		<div class="header-band">
+			<h3>Design</h3>
+		</div>
+		<div class="icon-container">
+			<img src="assets/images/figma-icon.png">
+			<img src="assets/images/adobe-icon.png">
 		</div>
 
-		<div class="project-right">
-			<img src="assets/images/projectPic2.png">
-			<div class="desc">
-				<h2>Sweet Recipes App</h2>
-				<h4>Sweets are the a very mouth watering part of the any diet.This Sweet Recipes App will provide you with all the sensations of mouth watering sweeteness and heartfull of joy. </h4>
-			</div>
+		<div class="header-band">
+			<h3>Development</h3>
+		</div>
+		<div class="icon-container">
+			<img src="assets/images/html-icon.png">
+			<img src="assets/images/css3-icon.png">
+			<img src="assets/images/javascript-icon.png">
+			<img src="assets/images/mysql-icon.png">
+			<img src="assets/images/php-icon.png">
+			<img src="assets/images/java-icon.png">
+			<img src="assets/images/androidstudio-icon.png">
+			<img src="assets/images/xml-icon.png">
+		</div>
+
+
+		<div class="header-band">
+			<h3>Deployment</h3>
+		</div>
+		<div class="icon-container">
+			<img src="assets/images/playstore-icon.png">
+			<img src="assets/images/hostgator-icon.png">
+		</div>
+	</section>
+
+
+	<!-- Works Section -->
+	<section class="works-section-container" id="works">
+		<h1>My Works</h1>
+		<div class="header-band">
+			<h3>Web Development</h3>
+		</div>
+		<div class="row  justify-content-between">
 			
+			<div class="col-lg-6 col-md-6 col-12 col">
+				<div class="project-container">
+					<img src="assets/images/project-gif-2.png" class="prj-image">
+					<span class="prj-title-span">Title</span>
+					<span class="prj-title">Portfolio Design</span>
+					<span class="prj-desc-span">Description</span>
+					<span class="prj-desc">A Portfolio website that displays the projects of a designer who is very god at design</span>
+					<div class="prj-buttons">
+						<a href="#">
+							<div class="github-btn">
+								<img src="assets/images/github-icon.png">
+								<span>View code on Github</span>
+							</div>
+						</a>
+						<a href="#">
+							<div class="github-btn live-btn">
+								<img src="assets/images/liveDemo-icon.png">
+								<span>Live Demo</span>
+							</div>
+						</a>
+					</div>
+					<button class="see-more-btn" name="1.1" id="2" onclick="projectDisplayModal(this.name)">
+						<span>See More</span>
+						<img src="assets/images/arrow-icon.png">
+					</button>
+				</div>
+			</div>
+
 		</div>
 
-		<button class="see-btn">SEE MORE</button>
+
+		<br>
+		
+
+		<div class="header-band">
+			<h3>App Development</h3>
+		</div>
+		<div class="row  justify-content-between">
+			<div class="col-lg-6 col-md-6 col-12 col">
+				<div class="project-container">
+					<img src="assets/images/project-gif-4.png" class="prj-image">
+					<span class="prj-title-span">Title</span>
+					<span class="prj-title">Portfolio Design</span>
+					<span class="prj-desc-span">Description</span>
+					<span class="prj-desc">A Portfolio website that displays the projects of a designer who is very god at design</span>
+					<div class="prj-buttons">
+						<a href="#">
+							<div class="github-btn">
+								<img src="assets/images/github-icon.png">
+								<span>View code on Github</span>
+							</div>
+						</a>
+						<a href="#">
+							<div class="github-btn live-btn">
+								<img src="assets/images/liveDemo-icon.png">
+								<span>Live Demo</span>
+							</div>
+						</a>
+					</div>
+					<button class="see-more-btn" name="1.1" id="5" onclick="projectDisplayModal(this.name)">
+						<span>See More</span>
+						<img src="assets/images/arrow-icon.png">
+					</button>
+				</div>
+			</div>
+
+		</div>
 	</section>
 
-	<section class="contact">
-		<h1 class="head-text">Contact Me</h1>
-		<input type="text" placeholder="Name"></input>
-		<input type="text" placeholder="Email"></input>
-		<textarea placeholder="Description" class="input-desc"></textarea>
-		<button class="submit-btn">Submit</button>
+	
+
+
+	<!-- PROJECT MODALS -->
+	<div class="project-modal" id="1.1">
+		<img src="assets/images/close-icon.png" class="close-btn" id="close-btn">
+	  <!-- Modal content -->
+		<div class="project-modal-content">
+			<img src="assets/images/project-gif-4.png">
+			<span class="prj-title-span">Title</span>
+			<span class="prj-title">Portfolio Design</span>
+			<span class="prj-desc-span">Description</span>
+			<span class="prj-desc">A Portfolio website that displays the projects of a designer who is very god at design</span>
+			<span class="prj-lc-span">Project Lifecycle</span>
+			<span class="prj-lcq">Why it is made?</span>
+			<span>
+				<ul>
+					<li><b>Problem:-</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a fermentum dui. Integer semper sodales urna id interdum. Maecenas sit amet consectetur enim. Curabitur scelerisque arcu felis, quis sagittis lacus interdum blandit.</li>
+					<br>
+					<li><b>Solution:-</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a fermentum dui. Integer semper sodales urna id interdum. Maecenas sit amet consectetur enim. Curabitur scelerisque arcu felis, quis sagittis lacus interdum blandit.</li>
+				</ul>
+			</span>
+			<span class="prj-lcq">How it is made?</span>
+			<span>
+				<ul>
+					<li><b>Design:-</b> Lorem ipsum dolor sit amet<br>
+						<img src="assets/images/figma-icon.png" class="prj-modal-icon">
+						<img src="assets/images/adobe-icon.png" class="prj-modal-icon">
+					</li>
+					<li><b>Development:-</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a fermentum dui.<br>
+						<img src="assets/images/html-icon.png" class="prj-modal-icon">
+						<img src="assets/images/css3-icon.png" class="prj-modal-icon">
+						<img src="assets/images/javascript-icon.png" class="prj-modal-icon">
+						<img src="assets/images/mysql-icon.png" class="prj-modal-icon">
+						<img src="assets/images/php-icon.png" class="prj-modal-icon">
+					</li>
+					<li><b>Deployment:-</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a fermentum dui.<br>
+						<img src="assets/images/hostgator-icon.png" class="prj-modal-icon" style="width: 100px;">
+					</li>
+				</ul>
+			</span>
+
+			<span class="prj-exp-span">Experience it on your own</span>
+			<div class="prj-modal-btn">
+				<div class="modal-github-btn">
+					<img src="assets/images/github-icon.png">
+					<span>View code on Github</span>
+				</div>
+				<div class="modal-github-btn modal-live-btn">
+					<img src="assets/images/liveDemo-icon.png">
+					<span>Live Demo</span>
+				</div>
+			</div>
+		</div>
+		<div class="decor"></div>
+	</div>
+
+
+
+
+
+	<!-- Contact Section -->
+	<section class="contact-section-container" id="contactme">
+		<h1>Contact Me</h1>
+		<form class="contact2-form validate-form">
+			<div class="wrap-input2 validate-input" data-validate="Name is required">
+				<input class="input2" type="text" name="name">
+				<span class="focus-input2" data-placeholder="NAME"></span>
+			</div>
+			<div class="wrap-input2 validate-input" data-validate = "Enter a valid Email">
+				<input class="input2" type="text" name="email">
+				<span class="focus-input2" data-placeholder="EMAIL"></span>
+			</div>
+			<div class="wrap-input2 validate-input" data-validate = "Message is required">
+				<textarea class="input2" name="message"></textarea>
+				<span class="focus-input2" data-placeholder="MESSAGE"></span>
+			</div>
+			<button class="contact2-form-btn">
+				<span class="">Send</span>
+			</button>
+		</form>
 	</section>
 
-	<section class="footer">
-		&copy Copyright KAWSHIK LODH
-	</section>
 
+<!-- ============================================================= -->
+<script src="assets/js/jquery-slim.min.js"></script>
+<script src="assets/js/anime.min.js"></script>
+<script src="assets/js/contact-form.js"></script>
+<!-- ============================================================= -->
+
+<script src="js/script.js"></script>
 </body>
 </html>
