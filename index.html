@@ -42,7 +42,7 @@
 	<!-- Landing Section -->
 	<section class="landing-section-container">
 		<div class="hero-img">
-			<img src="assets/images/face.jpg">
+			<img src="assets/images/face1.jpeg">
 		</div>
 		<div class="hero-detail">
 			<h5><i>Hello I'm</i></h2>
@@ -106,13 +106,14 @@
 		</div>
 		<div class="row  justify-content-between">
 			
+			<!-- Project Cards -->
 			<div class="col-lg-6 col-md-6 col-12 col">
 				<div class="project-container">
-					<img src="assets/images/project-gif-2.png" class="prj-image">
+					<img src="assets/images/project-gif-1.jpg" class="prj-image">
 					<span class="prj-title-span">Title</span>
-					<span class="prj-title">Portfolio Design</span>
+					<span class="prj-title">E-Smart Shopping</span>
 					<span class="prj-desc-span">Description</span>
-					<span class="prj-desc">A Portfolio website that displays the projects of a designer who is very god at design</span>
+					<span class="prj-desc">The project was to make offline shopping hastle free by providing an android app for scanning the barcode</span>
 					<div class="prj-buttons">
 						<a href="#">
 							<div class="github-btn">
@@ -127,7 +128,7 @@
 							</div>
 						</a>
 					</div>
-					<button class="see-more-btn" name="1.1" id="2" onclick="projectDisplayModal(this.name)">
+					<button class="see-more-btn" name="1.1" id="2" onclick="projectModalShow(this.name)">
 						<span>See More</span>
 						<img src="assets/images/arrow-icon.png">
 					</button>
@@ -136,6 +137,62 @@
 
 			<div class="col-lg-6 col-md-6 col-12 col">
 				<div class="project-container">
+					<img src="assets/images/project-gif-5.png" class="prj-image">
+					<span class="prj-title-span">Title</span>
+					<span class="prj-title">Optricks Web Solutions(Landing Page)</span>
+					<span class="prj-desc-span">Description</span>
+					<span class="prj-desc">A landing page for a hosting company called Optrics Web Solutions.</span>
+					<div class="prj-buttons">
+						<a href="#">
+							<div class="github-btn">
+								<img src="assets/images/github-icon.png">
+								<span>View code on Github</span>
+							</div>
+						</a>
+						<a href="#">
+							<div class="github-btn live-btn">
+								<img src="assets/images/liveDemo-icon.png">
+								<span>Live Demo</span>
+							</div>
+						</a>
+					</div>
+					<button class="see-more-btn" name="1.2" id="2" onclick="projectModalShow(this.name)">
+						<span>See More</span>
+						<img src="assets/images/arrow-icon.png">
+					</button>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-6 col-12 col">
+				<div class="project-container">
+					<img src="assets/images/project-gif-6.png" class="prj-image">
+					<span class="prj-title-span">Title</span>
+					<span class="prj-title">Sassenvi</span>
+					<span class="prj-desc-span">Description</span>
+					<span class="prj-desc">A SASS dev environment for developers for rapid development of static web pages includes sass server.</span>
+					<div class="prj-buttons">
+						<a href="https://github.com/Kawshik/Sassenvi">
+							<div class="github-btn">
+								<img src="assets/images/github-icon.png">
+								<span>View code on Github</span>
+							</div>
+						</a>
+						<a href="https://github.com/Kawshik/Sassenvi">
+							<div class="github-btn live-btn">
+								<img src="assets/images/liveDemo-icon.png">
+								<span>Live Demo</span>
+							</div>
+						</a>
+					</div>
+					<button class="see-more-btn" name="1.3" id="2" onclick="projectModalShow(this.name)">
+						<span>See More</span>
+						<img src="assets/images/arrow-icon.png">
+					</button>
+				</div>
+			</div>
+
+			<!-- <div class="col-lg-6 col-md-6 col-12 col">
+				<div class="project-container">
 					<img src="assets/images/project-gif-2.png" class="prj-image">
 					<span class="prj-title-span">Title</span>
 					<span class="prj-title">Portfolio Design</span>
@@ -155,12 +212,12 @@
 							</div>
 						</a>
 					</div>
-					<button class="see-more-btn" name="1.2" id="2" onclick="projectDisplayModal(this.name)">
+					<button class="see-more-btn" name="1.1" id="2" onclick="projectModalShow(this.name)">
 						<span>See More</span>
 						<img src="assets/images/arrow-icon.png">
 					</button>
 				</div>
-			</div>
+			</div> -->
 
 		</div>
 
@@ -168,7 +225,7 @@
 		<br>
 		
 
-		<div class="header-band">
+		<!-- <div class="header-band">
 			<h3>App Development</h3>
 		</div>
 		<div class="row  justify-content-between">
@@ -200,47 +257,49 @@
 				</div>
 			</div>
 
-		</div>
+		</div> -->
 	</section>
 
 	
 
 
 	<!-- PROJECT MODALS -->
+
 	<div class="project-modal" id="1.1">
-		<img src="assets/images/close-icon.png" class="close-btn" id="close-btn">
+		<img src="assets/images/close-icon.png" class="close-btn" name="1.1" onclick="projectModalClose(this.name)">
 	  <!-- Modal content -->
 		<div class="project-modal-content">
-			<img src="assets/images/project-gif-4.png">
+			<img src="assets/images/project-gif-1.jpg">
 			<span class="prj-title-span">Title</span>
-			<span class="prj-title">Portfolio Design</span>
+			<span class="prj-title">E-Smart Shopping</span>
 			<span class="prj-desc-span">Description</span>
-			<span class="prj-desc">A Portfolio website that displays the projects of a designer who is very god at design</span>
+			<span class="prj-desc">The project was to make offline shopping hastle free by providing an android app for scanning the barcode of the products in the shop and generate a bill which could be paid online. A dash board was also made for the shop owner so that they could manage their shop and the products and also see the earnings details</span>
 			<span class="prj-lc-span">Project Lifecycle</span>
 			<span class="prj-lcq">Why it is made?</span>
 			<span>
 				<ul>
-					<li><b>Problem:-</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a fermentum dui. Integer semper sodales urna id interdum. Maecenas sit amet consectetur enim. Curabitur scelerisque arcu felis, quis sagittis lacus interdum blandit.</li>
+					<li><b>Problem:-</b> Everytime an individual goes for shopping he/she needs to encounter a queue that no one likes to stand in the billing counter, which takes up a lot of time</li>
 					<br>
-					<li><b>Solution:-</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a fermentum dui. Integer semper sodales urna id interdum. Maecenas sit amet consectetur enim. Curabitur scelerisque arcu felis, quis sagittis lacus interdum blandit.</li>
+					<li><b>Solution:-</b> A software based solution which could give people the ability to bill their items themselves and pay the bill online without standing in the queue.</li>
 				</ul>
 			</span>
 			<span class="prj-lcq">How it is made?</span>
 			<span>
 				<ul>
-					<li><b>Design:-</b> Lorem ipsum dolor sit amet<br>
+					<li><b>Design:-</b> The whole system including the app and the admin dashboard is designed using figma<br>
 						<img src="assets/images/figma-icon.png" class="prj-modal-icon">
-						<img src="assets/images/adobe-icon.png" class="prj-modal-icon">
 					</li>
-					<li><b>Development:-</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a fermentum dui.<br>
+					<li><b>Development:-</b> Technologies such android is used to develop the android app and html, css, javascript is used for the frontend of the dashboard and for the backend php and mysql was used for building the core api.<br>
 						<img src="assets/images/html-icon.png" class="prj-modal-icon">
 						<img src="assets/images/css3-icon.png" class="prj-modal-icon">
 						<img src="assets/images/javascript-icon.png" class="prj-modal-icon">
 						<img src="assets/images/mysql-icon.png" class="prj-modal-icon">
 						<img src="assets/images/php-icon.png" class="prj-modal-icon">
+						<img src="assets/images/androidstudio-icon.png" class="prj-modal-icon" style="width: 100px;">
 					</li>
-					<li><b>Deployment:-</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a fermentum dui.<br>
+					<li><b>Deployment:-</b> The app was deployed in google play store and the dashboard was hosted on the servers of hostgator<br>
 						<img src="assets/images/hostgator-icon.png" class="prj-modal-icon" style="width: 100px;">
+						<img src="assets/images/playstore-icon.png" class="prj-modal-icon">
 					</li>
 				</ul>
 			</span>
@@ -259,41 +318,38 @@
 		</div>
 		<div class="decor"></div>
 	</div>
-	
+
 	<div class="project-modal" id="1.2">
-		<img src="assets/images/close-icon.png" class="close-btn" id="close-btn">
+		<img src="assets/images/close-icon.png" class="close-btn" name="1.2" onclick="projectModalClose(this.name)">
 	  <!-- Modal content -->
 		<div class="project-modal-content">
-			<img src="assets/images/project-gif-4.png">
+			<img src="assets/images/project-gif-5.png">
 			<span class="prj-title-span">Title</span>
-			<span class="prj-title">Portfolio Design2</span>
+			<span class="prj-title">Optricks Web Solutions(Landing Page)</span>
 			<span class="prj-desc-span">Description</span>
-			<span class="prj-desc">A Portfolio website that displays the projects of a designer who is very god at design</span>
+			<span class="prj-desc">A landing page for a hosting company called Optrics Web Solutions.</span>
 			<span class="prj-lc-span">Project Lifecycle</span>
 			<span class="prj-lcq">Why it is made?</span>
 			<span>
 				<ul>
-					<li><b>Problem:-</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a fermentum dui. Integer semper sodales urna id interdum. Maecenas sit amet consectetur enim. Curabitur scelerisque arcu felis, quis sagittis lacus interdum blandit.</li>
+					<li><b>Problem:-</b> Generally every company wants to reach their customers quickly, and in this age of technology where every body is connected thus making it hard to reach targeted audience</li>
 					<br>
-					<li><b>Solution:-</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a fermentum dui. Integer semper sodales urna id interdum. Maecenas sit amet consectetur enim. Curabitur scelerisque arcu felis, quis sagittis lacus interdum blandit.</li>
+					<li><b>Solution:-</b> A landing page is designed and developed keeping in mind the target audience so that the business goals can be met effectively</li>
 				</ul>
 			</span>
 			<span class="prj-lcq">How it is made?</span>
 			<span>
 				<ul>
-					<li><b>Design:-</b> Lorem ipsum dolor sit amet<br>
+					<li><b>Design:-</b> The web page is designed using figma<br>
 						<img src="assets/images/figma-icon.png" class="prj-modal-icon">
-						<img src="assets/images/adobe-icon.png" class="prj-modal-icon">
 					</li>
-					<li><b>Development:-</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a fermentum dui.<br>
+					<li><b>Development:-</b> Technologies such html, css, javascript is used for this project<br>
 						<img src="assets/images/html-icon.png" class="prj-modal-icon">
 						<img src="assets/images/css3-icon.png" class="prj-modal-icon">
 						<img src="assets/images/javascript-icon.png" class="prj-modal-icon">
-						<img src="assets/images/mysql-icon.png" class="prj-modal-icon">
-						<img src="assets/images/php-icon.png" class="prj-modal-icon">
 					</li>
-					<li><b>Deployment:-</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a fermentum dui.<br>
-						<img src="assets/images/hostgator-icon.png" class="prj-modal-icon" style="width: 100px;">
+					<li><b>Deployment:-</b> The website was hosted on the servers of Hosting Basket<br>
+						<!-- <img src="assets/images/hostgator-icon.png" class="prj-modal-icon" style="width: 100px;"> -->
 					</li>
 				</ul>
 			</span>
@@ -312,6 +368,63 @@
 		</div>
 		<div class="decor"></div>
 	</div>
+
+	<div class="project-modal" id="1.3">
+		<img src="assets/images/close-icon.png" class="close-btn" name="1.3" onclick="projectModalClose(this.name)">
+	  <!-- Modal content -->
+		<div class="project-modal-content">
+			<img src="assets/images/project-gif-6.png">
+			<span class="prj-title-span">Title</span>
+			<span class="prj-title">Sassenvi</span>
+			<span class="prj-desc-span">Description</span>
+			<span class="prj-desc">A simple Development Environment to create SASS project's with live-server without any hardle. It gives you a simple website already created that you can edit and move forward.</span>
+			<span class="prj-lc-span">Project Lifecycle</span>
+			<span class="prj-lcq">Why it is made?</span>
+			<span>
+				<ul>
+					<li><b>Problem:-</b> These is faced  by all developers, when we start a new project we need to make the project structure get all the files nescessary and then start the project, these is done for all the projects and in the same way</li>
+					<br>
+					<li><b>Solution:-</b> Sassenvi a dev environment which can create the project structure and link files with sass server and get development up and running in just one linr in the terminal</li>
+				</ul>
+			</span>
+			<span class="prj-lcq">How it is made?</span>
+			<span>
+				<ul>
+					<li><b>Design:-</b> It is made using gulp which is a popular tast runner<br>
+						<!-- <img src="assets/images/figma-icon.png" class="prj-modal-icon"> -->
+					</li>
+					<li><b>Development:-</b> It has a sass server, gulp task runner and a hot reloding<br>
+						<!-- <img src="assets/images/html-icon.png" class="prj-modal-icon">
+						<img src="assets/images/css3-icon.png" class="prj-modal-icon">
+						<img src="assets/images/javascript-icon.png" class="prj-modal-icon"> -->
+					</li>
+					<li><b>Deployment:-</b> It is currently available on Github only<br>
+						<!-- <img src="assets/images/hostgator-icon.png" class="prj-modal-icon" style="width: 100px;"> -->
+					</li>
+				</ul>
+			</span>
+
+			<span class="prj-exp-span">Experience it on your own</span>
+			<div class="prj-modal-btn">
+				<a href="https://github.com/Kawshik/Sassenvi">
+				<div class="modal-github-btn">
+					<img src="assets/images/github-icon.png">
+					<span>View code on Github</span>
+				</div>
+				</a>
+				<a href="https://github.com/Kawshik/Sassenvi">
+				<div class="modal-github-btn modal-live-btn">
+					<img src="assets/images/liveDemo-icon.png">
+					<span>Live Demo</span>
+				</div>
+				</a>
+			</div>
+		</div>
+		<div class="decor"></div>
+	</div>
+
+	
+	
 
 
 
