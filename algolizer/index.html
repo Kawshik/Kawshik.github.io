@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AlgoLizer</title>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar">
+		<div class="logo">
+			<a href="index.html"><img src="./assets/logo.svg" alt=""></a>
+		</div>
+		<div class="cta-container">
+			<div class="generate-btn" onclick="reset()">
+				<img src="./assets/new_icon.svg" alt="">
+				<span>Generate New Array</span>
+			</div>
+			<div class="settings-btn">
+				<span>Settings</span>
+				<img src="./assets/settings_icon.svg" alt="">
+			</div>
+		</div>
+	</nav>
+
+	<div class="bar-container" id="bar_container"></div>
+
+	<!-- <div class="btn-container">
+		<button onclick="reset()" class="reset-btn">Reset</button>
+		<button onclick="bubbleSort()" class="sort-btn">Bubble Sort</button>
+		<button onclick="insertionSort()" class="sort-btn">Insertion Sort</button>
+		<button onclick="selectionSort()" class="sort-btn">Selection Sort</button>
+		<button onclick="mergeSort()" class="sort-btn">Merge Sort</button>
+		<button onclick="quickSort()" class="sort-btn">Quick Sort</button>
+	</div> -->
+	<div class="bottom-bar">
+		<div class="sort-container">
+			<div class="sort-decor"><h1>SORTS</h1></div>
+			<div class="sort-btn-container">
+				<div class="top-container">
+					<div class="sort-btn" id="bubble" onclick="bubbleSort()">Bubble Sort</div>
+					<div class="sort-btn" onclick="selectionSort()">Selection Sort</div>
+					<div class="sort-btn"onclick="mergeSort()">Merge Sort</div>
+				</div>
+				<div class="progress-bar">
+					<div class="progress-bar-svg">
+						<div class="progress-bg" id="progress"></div>
+					</div>
+					<svg width="10" height="10">
+						<defs>
+							<clipPath id="progress-bar-svg">
+								<circle cx="6" cy="6" r="6"/>
+								<rect x="6" y="4.7" width="600" height="3"/>
+							</clipPath>	
+						</defs>
+					</svg>
+				</div>
+				<div class="bottom-container">
+					<div class="sort-btn" onclick="insertionSort()">Insertion Sort</div>
+					<div class="sort-btn" onclick="quickSort()">Quick Sort</div>
+				</div>
+			</div>
+		</div>
+		<div class="detail-container">
+			<div class="total">
+				<span>Total Bars</span>
+				<h1 id="total_bars">100</h1>
+			</div>
+			<div class="height">
+				<span>Bars Height Range</span>
+				<h1 id="barsx_height_range">0-500</h1>
+			</div>
+			<div class="width">
+				<span>Bar Width</span>
+				<h1 id="bar_width">5 px</h1>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="scripts/setup.js"></script>
+	<script type="text/javascript" src="scripts/bubblesortscript.js"></script>
+	<script type="text/javascript" src="scripts/insertionsortscript.js"></script>
+	<script type="text/javascript" src="scripts/selectionsortscript.js"></script>
+	<script type="text/javascript" src="scripts/mergesortscript.js"></script>
+	<script type="text/javascript" src="scripts/quicksortscript.js"></script>
+</body>
+</html>
+
+
+<!-- FEATURES LIST -->
+<!-- 
+	1. Can change the number of bars to be displsyed
+	2. Can change the thickness of the bars
+	3. Button to directly create large set of bars and small set of bars
+	4. Can increase the speed of execution
+	5. Can swap between dark and light modes
+	6. Can sort in both ascending and descending order
+	7. Can view the code of the algorithm
+ -->
+
+<!-- IMPORTANT NOTES -->
+<!--	
+	When running only stop* button will be clickable
+
+	*stop button set the array to the values that it just generated
+ -->
