@@ -13,8 +13,8 @@ function createBars(){
 		
 		var bar = document.createElement("div");
 		
-		// bar.classList.add("bar-thick");		//creates thick bars of size 5px
-		bar.classList.add("bar-thin");	//creates thin bars of size 1px
+		bar.classList.add("bar-thick");		//creates thick bars of size 5px
+		// bar.classList.add("bar-thin");	//creates thin bars of size 1px
 		
 		var height = Math.floor(Math.random() * (MAX_HEIGHT_VALUE - 5 + 1) + 5);
 		
