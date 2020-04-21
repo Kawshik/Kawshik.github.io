@@ -254,6 +254,7 @@ function enableFeatures() {
 	var algoDiv = document.getElementsByClassName("sort-btn");
 	for (var i = 0; i < algoDiv.length; i++) {
 		algoDiv[i].style.pointerEvents = "auto";
+		algoDiv[i].classList.remove("disabled");
 	}
 
 	document.querySelector('[data-switchname=\"width\"]').classList.remove("disabled");
