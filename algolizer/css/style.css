@@ -148,14 +148,17 @@ body{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	/*height: 510px;*/
 
 	/*to rotate*/
-	/*transform: rotateX(180deg);*/
+	transform: rotateX(180deg);
 
 	background: url("../assets/background_straight.svg");
 	background-size: cover;
 	flex-grow: 3;
+}
+
+.inverted{
+	transform: rotateX(0deg);	
 }
 
 .bar-thick{

@@ -83,15 +83,14 @@ function delay() {
   return new Promise(resolve => setTimeout(resolve, delayTime));
 }
 
-
+function afterCompleteDelay(){
+	return new Promise(resolve => setTimeout(resolve, 0));	
+}
 async function afterCompleteView(){
-	var temp = delayTime;
-	delayTime = 0;
 	for(var i=0;i<bars.length;i++) {
         document.querySelector('[data-index=\"'+ i +'\"]').style["background"] = "green";
-        await delay();
+        await afterCompleteDelay();
     }
-    delayTime = temp;
     enableFeatures();
 }
 
@@ -304,3 +303,16 @@ function changeBarWidth(switchName){
 }
 
 
+// SHOW INVERTED BARS FUNCTIONALITY
+var inverted = false;
+function invertBars(switchName){
+	if(inverted){
+		document.getElementById("bar_container").classList.remove("inverted");
+		inverted = false;
+		document.querySelector('[data-switchname=\"'+ switchName +'\"]').childNodes[1].style.marginLeft = -1 + "px";
+	} else {
+		document.getElementById("bar_container").classList.add("inverted");	
+		inverted = true;
+		document.querySelector('[data-switchname=\"'+ switchName +'\"]').childNodes[1].style.marginLeft = 11 + "px";
+	}
+} 
