@@ -1,4 +1,6 @@
 async function insertionSort(){
+    disableFeatures();
+    
     for(var i=1;i<bars.length;i++){
    		
    		var key = bars[i];
@@ -34,8 +36,9 @@ async function insertionSort(){
 
     console.log(bars);
     console.log("done!");
-    for(var i=0;i<bars.length;i++) {
-		await delay();
-    	document.querySelector('[data-index=\"'+ i +'\"]').style["background"] = "green";
-    }
+    // for(var i=0;i<bars.length;i++) {
+		  // await delay();
+    // 	document.querySelector('[data-index=\"'+ i +'\"]').style["background"] = "green";
+    // }
+    afterCompleteView();
 }

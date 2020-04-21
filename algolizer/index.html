@@ -12,11 +12,11 @@
 			<a href="index.html"><img src="./assets/logo.svg" alt=""></a>
 		</div>
 		<div class="cta-container">
-			<div class="generate-btn" onclick="reset()">
+			<div class="generate-btn" onclick="reset()" id="generate-btn">
 				<img src="./assets/new_icon.svg" alt="">
 				<span>Generate New Array</span>
 			</div>
-			<div class="settings-btn">
+			<div class="settings-btn" onclick="showSettings()">
 				<span>Settings</span>
 				<img src="./assets/settings_icon.svg" alt="">
 			</div>
@@ -25,14 +25,6 @@
 
 	<div class="bar-container" id="bar_container"></div>
 
-	<!-- <div class="btn-container">
-		<button onclick="reset()" class="reset-btn">Reset</button>
-		<button onclick="bubbleSort()" class="sort-btn">Bubble Sort</button>
-		<button onclick="insertionSort()" class="sort-btn">Insertion Sort</button>
-		<button onclick="selectionSort()" class="sort-btn">Selection Sort</button>
-		<button onclick="mergeSort()" class="sort-btn">Merge Sort</button>
-		<button onclick="quickSort()" class="sort-btn">Quick Sort</button>
-	</div> -->
 	<div class="bottom-bar">
 		<div class="sort-container">
 			<div class="sort-decor"><h1>SORTS</h1></div>
@@ -68,13 +60,114 @@
 			</div>
 			<div class="height">
 				<span>Bars Height Range</span>
-				<h1 id="barsx_height_range">0-500</h1>
+				<h1 id="bars_height_range">0-400</h1>
 			</div>
 			<div class="width">
 				<span>Bar Width</span>
 				<h1 id="bar_width">5 px</h1>
 			</div>
 		</div>
+	</div>
+
+	<div class="settings" id="settings">
+		
+		
+		<div class="mid-elements">
+		
+			<div class="close-btn" onclick="hideSettings()">
+				<span></span><!-- THIS IS A SEPERATOR -->
+				<img src="./assets/close_icon.svg" alt="">
+			</div>
+
+			<div class="title-row">
+				<img src="./assets/settings_icon.svg" alt="">
+				<h1>Settings</h1>
+			</div>
+			
+			<div class="num-row">
+				<h4>Change Numbers of Bars</h4>
+				
+				<div class="min-max">
+					<span class="min">5</span>
+					<span class="max">1000</span>
+				</div>
+				<div class="slider-container" id="slider-number-container" >
+					<span class="slider-value" id="slider-number-value">100</span>
+					<input class="slider" id="slider-number" type="range" value="100" min="5" max="1000">
+				</div>
+			</div>
+			
+			<div class="speed-row">
+				<h4>Change Speed of Execution</h4>
+				<div class="min-max">
+					<span class="min">0</span>
+					<span class="max">10</span>
+				</div>
+				<div class="slider-container" id="slider-speed-container">
+					<span class="slider-value" id="slider-speed-value">0</span>
+					<input class="slider" id="slider-speed" type="range" value="0" min="0" max="10">
+				</div>
+			</div>
+
+			<div class="switch-row-1">
+				<div class="col-1">
+					<h4>Change Bar Width</h4>
+					<div class="switch-container">
+						<div class="left-text">Thick</div>
+						<div class="switch" id="switch" onclick="changeBarWidth('width')" data-switchname="width">
+							<div class="switch-thumb" id="switch-thumb"></div>
+							<div class="switch-track" id="switch-track"></div>
+						</div>
+						<div class="right-text">Thin</div>		
+					</div>	
+				</div>
+
+				<div class="col-2">
+					<h4>switch Bars Count<span class="version"><h6>Beta</h6></span></h4>
+					<div class="switch-container">
+						<div class="left-text">Small</div>
+						<div class="switch" id="switch">
+							<div class="switch-thumb" id="switch-thumb"></div>
+							<div class="switch-track" id="switch-track"></div>
+						</div>
+						<div class="right-text">Large</div>		
+					</div>
+				</div>
+			</div>
+
+			<div class="switch-row-2">
+				<div class="col-1">
+					<h4>Switch Theme Mode<span class="version"><h6>Beta</h6></span></h4>
+					<div class="switch-container">
+						<div class="left-text">Dark</div>
+						<div class="switch" id="switch">
+							<div class="switch-thumb" id="switch-thumb"></div>
+							<div class="switch-track" id="switch-track"></div>
+						</div>
+						<div class="right-text">Light</div>		
+					</div>	
+				</div>
+
+				<div class="col-2">
+					<h4>Change Sort Order<span class="version"><h6>Beta</h6></span></h4>
+					<div class="switch-container">
+						<div class="left-text">Desc</div>
+						<div class="switch" id="switch">
+							<div class="switch-thumb" id="switch-thumb"></div>
+							<div class="switch-track" id="switch-track"></div>
+						</div>
+						<div class="right-text">Asce</div>		
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="coa-btn">
+			<img src="./assets/arrow_icon.svg" alt="">
+			<h3>Check Out The Algorithms<span class="version"><h6>Beta</h6></span></h3>
+		</div>
+
 	</div>
 
 	<script type="text/javascript" src="scripts/setup.js"></script>
@@ -85,22 +178,3 @@
 	<script type="text/javascript" src="scripts/quicksortscript.js"></script>
 </body>
 </html>
-
-
-<!-- FEATURES LIST -->
-<!-- 
-	1. Can change the number of bars to be displsyed
-	2. Can change the thickness of the bars
-	3. Button to directly create large set of bars and small set of bars
-	4. Can increase the speed of execution
-	5. Can swap between dark and light modes
-	6. Can sort in both ascending and descending order
-	7. Can view the code of the algorithm
- -->
-
-<!-- IMPORTANT NOTES -->
-<!--	
-	When running only stop* button will be clickable
-
-	*stop button set the array to the values that it just generated
- -->

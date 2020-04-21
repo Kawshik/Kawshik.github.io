@@ -54,12 +54,16 @@
 	}	
 
 async function quickSort() {
+	disableFeatures();
+	
 	var leftIndex = 0;
 	var rightIndex = bars.length - 1;
 	await quicksort(bars,leftIndex,rightIndex);
 	console.log(bars);
-	for(var i=0;i<bars.length;i++) {
-        await delay();
-        document.querySelector('[data-index=\"'+ i +'\"]').style["background"] = "green";
-    }
+	// for(var i=0;i<bars.length;i++) {
+ //        await delay();
+ //        document.querySelector('[data-index=\"'+ i +'\"]').style["background"] = "green";
+ //    }
+ 	
+ 	afterCompleteView();
 }

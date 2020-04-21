@@ -106,13 +106,18 @@ async function Sort(bars, startIndex, endIndex) {
 }
 
 async function mergeSort() {
+
+	disableFeatures();
+
 	var startIndex = 0;
 	var endIndex = bars.length - 1;
 	await Sort(bars, startIndex, endIndex);
 
 	console.log(bars);
-	for(var i=0;i<bars.length;i++) {
-        await delay();
-        document.querySelector('[data-index=\"'+ i +'\"]').style["background"] = "green";
-    }
+	// for(var i=0;i<bars.length;i++) {
+ //        await delay();
+ //        document.querySelector('[data-index=\"'+ i +'\"]').style["background"] = "green";
+ //    }
+	
+ 	afterCompleteView();
 }

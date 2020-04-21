@@ -1,4 +1,5 @@
 async function bubbleSort(){
+	disableFeatures();
 	for(var i=0;i<bars.length-1;i++){
 
 		for(var j=0;j<bars.length-i-1;j++){
@@ -34,8 +35,9 @@ async function bubbleSort(){
 
 	console.log(bars);
 	console.log("done!");
-	for(var i=0;i<bars.length;i++) {
-		await delay();
-		document.querySelector('[data-index=\"'+ i +'\"]').style["background"] = "green";
-	}
+	// for(var i=0;i<bars.length;i++) {
+	// 	await delay();
+	// 	document.querySelector('[data-index=\"'+ i +'\"]').style["background"] = "green";
+	// }
+	afterCompleteView();
 }

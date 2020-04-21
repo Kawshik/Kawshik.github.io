@@ -1,4 +1,5 @@
 async function selectionSort(){
+    disableFeatures();
     
     for(var i=0;i<bars.length;i++){
         
@@ -48,8 +49,9 @@ async function selectionSort(){
 
     console.log(bars);
     console.log("done!");
-    for(var i=0;i<bars.length;i++) {
-        await delay();
-        document.querySelector('[data-index=\"'+ i +'\"]').style["background"] = "green";
-    }
+    // for(var i=0;i<bars.length;i++) {
+    //     await delay();
+    //     document.querySelector('[data-index=\"'+ i +'\"]').style["background"] = "green";
+    // }
+    afterCompleteView();
 }
